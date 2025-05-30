@@ -46,11 +46,7 @@ class EmployeeAdmin (admin. ModelAdmin):
 ```
 ## OUTPUT
 
-![image](https://github.com/user-attachments/assets/e3a40a5e-1643-4150-b162-9644ed219a87)
-![image](https://github.com/user-attachments/assets/18c7aa54-760e-467e-b0fa-9c9a68143dd1)
-![image](https://github.com/user-attachments/assets/636482ce-e0c5-4590-aafc-fb4827b3c2af)
-
-![image](https://github.com/user-attachments/assets/19ba6e78-e1a6-4839-a7cb-cc5674f1592f)
+![image](https://github.com/user-attachments/assets/c205ecd1-03bf-4feb-8037-a3b99443879a)
 
 
 ## RESULT
