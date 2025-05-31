@@ -24,29 +24,32 @@ Execute Django admin and create details for 10 books
 
 ## PROGRAM
 ```
+
+
 admin.py
 
-from django.contrib import admin 
-from .models import Employee, EmployeeAdmin 
-admin.site.register (Employee, EmployeeAdmin)
+from django.contrib import admin
+from .models import Movie,MovieAdmin
+admin.site.register(Movie,MovieAdmin)
 
 models.py
 
-from django.db import models 
+from django.db import models
 from django.contrib import admin
-class Employee (models.Model):
-    eid=models.CharField(max_length=20,help_text="Employee ID")         
-    name=models.CharField(max_length=100)
-    salary=models.IntegerField()
-    age=models.IntegerField()
-    email=models. EmailField()
 
-class EmployeeAdmin (admin. ModelAdmin):
-    list_display=('eid', 'name', 'salary', 'age', 'email')
+class Movie(models.Model):
+    title=models.CharField(max_length=150,primary_key='True')
+    genre=models.CharField(max_length=100)
+    release_date=models.DateField()
+    rating=models.IntegerField()
+    
+class MovieAdmin(admin.ModelAdmin):
+    list_display=('title','genre','release_date','rating')
+
 ```
 ## OUTPUT
+![image](https://github.com/user-attachments/assets/33cb5aca-3b42-4fef-abe1-447311cbd27d)
 
-![image](https://github.com/user-attachments/assets/c205ecd1-03bf-4feb-8037-a3b99443879a)
 
 
 ## RESULT
